@@ -324,8 +324,8 @@
                         </h3>
                         <div class="space-y-4">
                             @foreach($experience ?? [
-                                ['role' => 'BEM Fakultas Vokasi', 'company' => 'Staff Ahli Badan Jaminan Mutu Organisasi', 'period' => 'Feb 2025 - Dec 2025']
-                                ['role' => 'Himpunan Mahasiswa Teknologi Informasi', 'company' => 'Staff Magang Departemen Minat dan Bakat, Staff Ahli Departemen Minat dan Bakat', 'period' => 'Sep 2024 - Nov 2025', 'desc' => 'Dua pilar: Desain figma interaktif dan deployment web responsif klien.']
+                                ['role' => 'BEM Fakultas Vokasi', 'company' => 'Staff Ahli Badan Jaminan Mutu Organisasi', 'period' => 'Feb 2025 - Dec 2025', 'desc' => 'Berperan dalam mendukung pelaksanaan evaluasi dan penjaminan mutu organisasi, menyusun administrasi pendukung, serta membantu memastikan program kerja dan kegiatan organisasi berjalan sesuai standar yang telah ditetapkan.'],
+                                ['role' => 'Himpunan Mahasiswa Teknologi Informasi', 'company' => 'Staff Magang Departemen Minat dan Bakat, Staff Ahli Departemen Minat dan Bakat', 'period' => 'Sep 2024 - Nov 2025', 'desc' => 'Berpartisipasi dalam perencanaan dan pelaksanaan program pengembangan minat dan bakat mahasiswa, mendukung penyelenggaraan kegiatan kemahasiswaan, serta berkontribusi dalam koordinasi dan evaluasi kegiatan untuk meningkatkan partisipasi mahasiswa.']
                             ] as $exp)
                                 <div class="bg-white border-2 border-[#131b2e] rounded-2xl p-5 sm:p-6 shadow-[4px_4px_0px_0px_rgba(19,27,46,1)]">
                                     <div class="flex justify-between items-start gap-4">
