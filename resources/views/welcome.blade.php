@@ -275,18 +275,6 @@
                             {{ $introduction ?? 'Mahasiswa aktif Program Studi Teknologi Informasi yang memiliki minat dan kemampuan dalam pengembangan perangkat lunak, pengelolaan basis data, serta implementasi teknologi berbasis web. Memiliki pengalaman mengerjakan proyek akademik yang melibatkan pengembangan website, integrasi database, dan penerapan konsep pemrograman berorientasi objek. Aktif dalam kegiatan organisasi yang membantu mengembangkan kemampuan komunikasi, koordinasi, dan kerja sama tim. Terbiasa bekerja secara teliti, disiplin, dan bertanggung jawab dalam menyelesaikan tugas maupun proyek. Memiliki semangat belajar yang tinggi serta motivasi untuk terus mengembangkan keterampilan teknis dan profesional melalui kesempatan magang di bidang Teknologi Informasi.' }}
                         </p>
                     </div>
-
-                    <div class="bg-[#ff82c2]/10 border-[2.5px] border-[#131b2e] rounded-3xl p-6 sm:p-8 shadow-[6px_6px_0px_0px_rgba(19,27,46,1)]">
-                        <h3 class="text-xl font-extrabold text-[#131b2e] mb-4">Minat &amp; Bidang Fokus</h3>
-                        <div class="flex flex-wrap gap-2.5">
-                            @foreach($interests ?? ['Desain Taktil & Neobrutalisme', 'Animasi Web Interaktif', 'Arsitektur Backend', 'Teknologi Hijau'] as $interest)
-                                <span class="bg-white border-2 border-[#131b2e] px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-extrabold shadow-[2px_2px_0px_0px_rgba(19,27,46,1)] flex items-center gap-1">
-                                    <svg class="w-3.5 h-3.5 text-[#ff82c2]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
-                                    {{ $interest }}
-                                </span>
-                            @endforeach
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Right Timelines -->
