@@ -119,12 +119,15 @@
             </a>
 
             <!-- Desktop Links -->
-            <div class="hidden md:flex items-center gap-8">
-                <a href="#tentang" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Tentang</a>
-                <a href="#keahlian" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Keahlian</a>
-                <a href="#portofolio" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Portofolio</a>
-                <a href="#kontak" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Kontak</a>
-            </div>
+<div class="hidden md:flex items-center gap-8 flex-1 justify-center">
+    <a href="#tentang" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Tentang</a>
+    <a href="#keahlian" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Keahlian</a>
+    <a href="#portofolio" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Portofolio</a>
+    <a href="#kontak" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Kontak</a>
+</div>
+
+<!-- Spacer Penyeimbang (Tambahkan ini agar menu tetap di tengah) -->
+<div class="hidden md:block w-[140px]"></div>
 
             <!-- Hamburger Button (Mobile) -->
             <div class="md:hidden">
