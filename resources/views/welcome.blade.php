@@ -126,18 +126,6 @@
                 <a href="#kontak" class="text-[#131b2e] font-bold text-sm tracking-wide relative hover:text-[#006e2f] transition-colors">Kontak</a>
             </div>
 
-            <!-- Action Button -->
-            <div class="hidden md:flex items-center gap-4">
-                <a href="#kontak" class="text-sm font-extrabold text-[#131b2e] hover:text-[#006e2f] transition-colors">Kontak</a>
-                <button 
-                    @click="triggerToast('Simulasi: CV Musyaffa berhasil diunduh!')"
-                    class="bg-[#22c55e] text-[#131b2e] border-2 border-[#131b2e] px-5 py-2 rounded-xl text-sm font-extrabold shadow-[3px_3px_0px_0px_rgba(19,27,46,1)] clay-btn-hover cursor-pointer flex items-center gap-2"
-                >
-                    <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                    Unduh CV
-                </button>
-            </div>
-
             <!-- Hamburger Button (Mobile) -->
             <div class="md:hidden">
                 <button 
@@ -171,15 +159,6 @@
                 <a href="#keahlian" @click="mobileMenuOpen = false" class="text-[#131b2e] font-bold text-base border-b border-gray-100 pb-2 transition-colors hover:text-[#006e2f]">Keahlian</a>
                 <a href="#portofolio" @click="mobileMenuOpen = false" class="text-[#131b2e] font-bold text-base border-b border-gray-100 pb-2 transition-colors hover:text-[#006e2f]">Portofolio</a>
                 <a href="#kontak" @click="mobileMenuOpen = false" class="text-[#131b2e] font-bold text-base border-b border-gray-100 pb-2 transition-colors hover:text-[#006e2f]">Kontak</a>
-                <div class="flex flex-col gap-3 pt-2">
-                    <button 
-                        @click="mobileMenuOpen = false; triggerToast('Simulasi: CV Musyaffa berhasil diunduh!')"
-                        class="bg-[#22c55e] text-[#131b2e] border-2 border-[#131b2e] py-3 rounded-xl text-center text-sm font-extrabold shadow-[3px_3px_0px_0px_rgba(19,27,46,1)] hover:scale-[1.01] flex items-center justify-center gap-2 cursor-pointer"
-                    >
-                        <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                        Unduh Curriculum Vitae
-                    </button>
-                </div>
             </div>
         </div>
     </nav>
