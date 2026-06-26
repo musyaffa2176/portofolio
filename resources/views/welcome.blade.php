@@ -393,64 +393,57 @@
         </section>
 
         {{-- 5. PROJECTS SECTION --}}
-        <section id="portofolio" class="py-4 select-none text-left scroll-mt-24">
-            <div class="mb-12 max-w-2xl space-y-4">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#131b2e]">
-                    Proyek <span class="text-[#006e2f] inline-block border-b-4 border-[#22c55e]">Unggulan</span>
-                </h2>
-                <p class="text-base sm:text-lg font-semibold text-[#3d4a3d]">
-                    Karya portofolio terpilih dengan detail teknologi lengkap serta link live demo interaktif.
-                </p>
+<section id="portofolio" class="py-4 select-none text-left scroll-mt-24">
+    <div class="mb-12 max-w-2xl space-y-4">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#131b2e]">
+            Proyek <span class="text-[#006e2f] inline-block border-b-4 border-[#22c55e]">Unggulan</span>
+        </h2>
+        <p class="text-base sm:text-lg font-semibold text-[#3d4a3d]">
+            Kumpulan karya dan proyek yang telah saya selesaikan.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        @php
+            $projectsList = [
+                [
+                    'name' => 'Bangun Kebiasaan Hidup sehat', 
+                    'desc' => 'Platform edukasi kesehatan yang dirancang untuk membantu pengguna membangun pola hidup sehat melalui modul pembelajaran interaktif. Website ini menyediakan panduan praktis mulai dari olahraga, pola makan bergizi, hingga manajemen waktu tidur untuk meningkatkan kualitas hidup sehari-hari.', 
+                    'image' => asset('images/Bangun Kebiasaan Hidup sehat.png') // Simpan foto di public/images/Bangun Kebiasaan Hidup sehat.png
+                ],
+                [
+                    'name' => 'RIFOLD.ID', 
+                    'desc' => 'platform e-commerce fashion yang menawarkan koleksi pakaian minimalis dan estetik. Website ini dirancang untuk memudahkan pelanggan menemukan pakaian berkualitas seperti kemeja dan jaket yang nyaman untuk aktivitas sehari-hari, dengan tampilan visual yang bersih dan modern.', 
+                    'image' => asset('images/RIFOLD.ID.png') // Simpan foto di public/images/RIFOLD.ID.png
+                ],
+                [
+                    'name' => 'piezonello', 
+                    'desc' => 'dashboard IoT yang memantau pengubahan energi tekanan (mekanik) menjadi energi listrik secara real-time. Website ini berfungsi untuk melacak analisis voltase dan output daya yang dihasilkan untuk kebutuhan lampu jalan pintar, menciptakan solusi energi terbarukan yang efisien dan berkelanjutan.', 
+                    'image' => asset('images/piezonello.png') // Simpan foto di public/images/piezonello.png
+                ]
+            ];
+        @endphp
+
+        @foreach($projectsList as $proj)
+            <div class="bg-white border-[2.5px] border-[#131b2e] rounded-[2rem] overflow-hidden shadow-[6px_6px_0px_0px_rgba(19,27,46,1)] transition-all duration-300 hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_rgba(19,27,46,1)]">
+                {{-- Bagian Foto Proyek --}}
+                <div class="relative bg-slate-100 aspect-[4/3] border-b-2 border-[#131b2e] overflow-hidden">
+                    <img src="{{ $proj['image'] }}" alt="{{ $proj['name'] }}" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+
+                {{-- Bagian Teks (Nama & Deskripsi) --}}
+                <div class="p-6 space-y-3">
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-[#131b2e] transition-colors">
+                        {{ $proj['name'] }}
+                    </h3>
+                    <p class="text-sm font-semibold text-[#5c6d5c] leading-relaxed">
+                        {{ $proj['desc'] }}
+                    </p>
+                </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                @php
-                    $projectsList = [
-                        ['name' => 'E-Commerce KaryaKita', 'tag' => 'Laravel / PHP', 'desc' => 'Toko online terintegrasi transaksi database, pencatatan transaksi untuk produk kreatif pengrajin lokal.', 'image' => 'https://images.unsplash.com/photo-1563013544-824ae1d704d3?auto=format&fit=crop&q=80&w=800', 'tech' => ['PHP', 'Laravel', 'MySQL', 'Tailwind CSS']],
-                        ['name' => 'AeroCast Weather Dashboard', 'tag' => 'Frontend', 'desc' => 'Pencarian perkiraan cuaca kota, visualisasi modern grafik kelembaban, serta penataan modern taktil.', 'image' => 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800', 'tech' => ['HTML', 'CSS', 'JavaScript', 'Bootstrap']],
-                        ['name' => 'FocusTask Suite', 'tag' => 'Fullstack', 'desc' => 'Dasbor pengelola tugas harian, prioritas berbasis SQLite, serta visualisasi charts produktivitas.', 'image' => 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=800', 'tech' => ['Laravel', 'SQLite', 'Tailwind', 'ChartJS']]
-                    ];
-                @endphp
-
-                @foreach($projectsList as $proj)
-                    <div class="bg-white border-[2.5px] border-[#131b2e] rounded-[2rem] overflow-hidden shadow-[6px_6px_0px_0px_rgba(19,27,46,1)] flex flex-col justify-between group transition-all duration-300 hover:translate-y-[-4px] hover:shadow-[8px_8px_0px_0px_rgba(19,27,46,1)]">
-                        <div>
-                            <div class="relative bg-slate-100 aspect-[4/3] border-b-2 border-[#131b2e] overflow-hidden">
-                                <img src="{{ $proj['image'] }}" alt="{{ $proj['name'] }}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
-                                <span class="absolute top-3.5 right-3.5 bg-[#40c2fd] border-2 border-[#131b2e] px-2.5 py-1 rounded-xl text-[10px] font-black uppercase shadow-[2px_2px_0px_0px_rgba(19,27,46,1)]">
-                                    {{ $proj['tag'] }}
-                                </span>
-                            </div>
-
-                            <div class="p-6 space-y-3.5">
-                                <h3 class="text-xl sm:text-2xl font-extrabold text-[#131b2e] line-clamp-1 group-hover:text-[#006e2f] transition-colors">
-                                    {{ $proj['name'] }}
-                                </h3>
-                                <p class="text-xs sm:text-sm font-semibold text-[#5c6d5c] leading-relaxed line-clamp-3">
-                                    {{ $proj['desc'] }}
-                                </p>
-                                <div class="flex flex-wrap gap-1.5 pt-1">
-                                    @foreach($proj['tech'] as $tech)
-                                        <span class="bg-[#faf8ff] border border-[#131b2e]/15 px-2 py-1 rounded-lg text-[10px] font-black tracking-wide text-[#131b2e] font-mono">
-                                            #{{ $tech }}
-                                        </span>
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 pt-0 border-t border-[#131b2e]/5 mt-4 flex items-center justify-between gap-4">
-                            <a href="https://github.com" target="_blank" class="flex-1 text-center py-2.5 px-3 border-2 border-[#131b2e] bg-white rounded-xl text-xs font-black text-[#131b2e] shadow-[2.5px_2.5px_0px_0px_rgba(19,27,46,1)] hover:bg-slate-50 active:translate-y-[1px] transition-all">
-                                Repo Github
-                            </a>
-                            <a href="#" onclick="alert('Demo disimulasikan')" class="flex-1 text-center py-2.5 px-3 border-2 border-[#131b2e] bg-[#22c55e] rounded-xl text-xs font-black text-[#131b2e] shadow-[2.5px_2.5px_0px_0px_rgba(19,27,46,1)] hover:opacity-95 active:translate-y-[1px] transition-all">
-                                Live Demo
-                            </a>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </section>
+        @endforeach
+    </div>
+</section>
 
         {{-- 6. CONTACT SECTION (Redesigned to match Photo 2 exactly and be completely responsive) --}}
         <section id="kontak" class="py-4 select-none text-left scroll-mt-24 max-w-3xl mx-auto">
@@ -542,7 +535,7 @@
                     <!-- WHATSAPP Card -->
                     <div class="group relative flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-white border-[2.5px] border-[#131b2e] rounded-2xl shadow-[5px_5px_0px_0px_rgba(19,27,46,1)] transition-all duration-300 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[7px_7px_0px_0px_rgba(19,27,46,1)]">
                         <a 
-                            href="https://wa.me/6281234567890" 
+                            href="https://wa.me/6281278305453" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="flex items-center gap-4 flex-1"
