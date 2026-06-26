@@ -268,18 +268,21 @@
                             Riwayat Pendidikan
                         </h3>
                         <div class="space-y-4">
-                            @foreach($education ?? [
-                                ['school' => 'Universitas Brawijaya', 'degree' => 'D3 Teknologi Informasi', 'period' => '2024 - Sekarang'],
-                                ['school' => 'MA Negeri 3 Palembang', 'degree' => 'Ilmu Pengetahuan Sosial', 'period' => '2021 - 2024']
-                            ] as $edu)
-                                <div class="bg-white border-2 border-[#131b2e] rounded-2xl p-5 sm:p-6 shadow-[4px_4px_0px_0px_rgba(19,27,46,1)]">
-                                    <div class="flex justify-between items-start gap-4">
-                                        <div>
-                                            <h4 class="font-extrabold text-base sm:text-lg text-[#131b2e]">{{ $edu['school'] }}</h4>
-                                            <p class="text-xs sm:text-sm font-black text-[#5c6d5c]">{{ $edu['degree'] }}</p>
-                                        </div>
-                                        <span class="bg-[#e2e8f0] border-2 border-[#131b2e] px-2.5 py-1 rounded-lg text-xs font-black shrink-0">{{ $edu['period'] }}</span>
-                            @endforeach
+                        @foreach($education ?? [
+    ['school' => 'Universitas Brawijaya', 'degree' => 'D3 Teknologi Informasi', 'period' => '2024 - Sekarang'],
+    ['school' => 'MA Negeri 3 Palembang', 'degree' => 'Ilmu Pengetahuan Sosial', 'period' => '2021 - 2024']
+] as $edu)
+    <div class="bg-white border-2 border-[#131b2e] rounded-2xl p-5 sm:p-6 shadow-[4px_4px_0px_0px_rgba(19,27,46,1)]">
+        <div class="flex justify-between items-start gap-4">
+            <div>
+                <h4 class="font-extrabold text-base sm:text-lg text-[#131b2e]">{{ $edu['school'] }}</h4>
+                <p class="text-xs sm:text-sm font-black text-[#5c6d5c]">{{ $edu['degree'] }}</p>
+            </div>
+            <span class="bg-[#e2e8f0] border-2 border-[#131b2e] px-2.5 py-1 rounded-lg text-xs font-black shrink-0">{{ $edu['period'] }}</span>
+        </div>
+        {{-- Baris deskripsi sudah dihapus dari sini --}}
+    </div>
+@endforeach
                         </div>
                     </div>
 
