@@ -548,14 +548,14 @@
                             <!-- Card text -->
                             <div>
                                 <span class="block text-[10px] font-black uppercase text-slate-400 font-mono tracking-widest leading-none mb-1">WHATSAPP</span>
-                                <span class="block text-sm sm:text-base font-extrabold text-[#131b2e]">+62 812-3456-7890</span>
+                                <span class="block text-sm sm:text-base font-extrabold text-[#131b2e]">+62 812-7830-5453</span>
                             </div>
                         </a>
 
                         <!-- Hover interactions / click indicators -->
                         <div class="flex items-center gap-2 mt-4 sm:mt-0 sm:self-center">
                             <button 
-                                @click="navigator.clipboard.writeText('+6281234567890'); triggerToast('Nomor WhatsApp berhasil disalin ke clipboard!')"
+                                @click="navigator.clipboard.writeText('+6281278305453'); triggerToast('Nomor WhatsApp berhasil disalin ke clipboard!')"
                                 title="Salin Nomor WhatsApp"
                                 class="p-2 border border-[#131b2e]/10 hover:border-[#131b2e] rounded-lg text-slate-500 hover:text-[#131b2e] transition-colors cursor-pointer"
                             >
