@@ -269,8 +269,8 @@
                         </h3>
                         <div class="space-y-4">
                             @foreach($education ?? [
-                                ['school' => 'Universitas Brawijaya', 'degree' => 'D3 Teknologi Informasi', 'period' => '2024 - Sekarang', 'desc' => 'Mendalami rekayasa kebutuhan perangkat lunak dan interaksi manusia-komputer.'],
-                                ['school' => 'MA Negeri 3 Palembang', 'degree' => 'Ilmu Pengetahuan Sosial', 'period' => '2021 - 2024', 'desc' => 'Dasar pemrograman web, algoritma dasar, transaksional database.']
+                                ['school' => 'Universitas Brawijaya', 'degree' => 'D3 Teknologi Informasi', 'period' => '2024 - Sekarang'],
+                                ['school' => 'MA Negeri 3 Palembang', 'degree' => 'Ilmu Pengetahuan Sosial', 'period' => '2021 - 2024']
                             ] as $edu)
                                 <div class="bg-white border-2 border-[#131b2e] rounded-2xl p-5 sm:p-6 shadow-[4px_4px_0px_0px_rgba(19,27,46,1)]">
                                     <div class="flex justify-between items-start gap-4">
@@ -279,9 +279,6 @@
                                             <p class="text-xs sm:text-sm font-black text-[#5c6d5c]">{{ $edu['degree'] }}</p>
                                         </div>
                                         <span class="bg-[#e2e8f0] border-2 border-[#131b2e] px-2.5 py-1 rounded-lg text-xs font-black shrink-0">{{ $edu['period'] }}</span>
-                                    </div>
-                                    <p class="text-xs sm:text-sm font-semibold text-[#3d4a3d] mt-3 border-t border-slate-100 pt-2.5">{{ $edu['desc'] }}</p>
-                                </div>
                             @endforeach
                         </div>
                     </div>
